@@ -431,3 +431,20 @@ padding-top:80px;
 
 
 }
+.logo{
+
+font-weight:bold;
+
+letter-spacing:10px;
+
+}
+
+
+
+.logo::before{
+
+content:"♛ ";
+
+color:#ff3030;
+
+}
