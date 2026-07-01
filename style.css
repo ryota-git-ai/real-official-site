@@ -890,3 +890,24 @@ font-size:30px;
 
 
 }
+
+/* =====================
+Contact
+===================== */
+
+
+#contact .card h4{
+
+font-size:26px;
+
+margin-bottom:15px;
+
+}
+
+
+
+#contact p{
+
+font-size:16px;
+
+}
