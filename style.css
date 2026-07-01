@@ -8,11 +8,9 @@ box-sizing:border-box;
 }
 
 
-
 html{
 scroll-behavior:smooth;
 }
-
 
 
 body{
@@ -31,7 +29,7 @@ line-height:1.8;
 
 
 /* =====================
-   Navigation
+Navigation
 ===================== */
 
 
@@ -140,6 +138,7 @@ z-index:200;
 
 
 
+
 .hamburger span{
 
 display:block;
@@ -167,7 +166,6 @@ Hero
 ===================== */
 
 
-
 .hero{
 
 height:100vh;
@@ -181,6 +179,7 @@ rgba(0,0,0,.9)
 ),
 
 url("images/hero.jpg");
+
 
 background-size:cover;
 
@@ -224,53 +223,14 @@ margin-bottom:30px;
 
 
 
-.real{
 
-text-align:center;
+.hero h1{
 
-margin:20px 0;
+font-size:110px;
 
-background:
+letter-spacing:20px;
 
-radial-gradient(
-circle,
-rgba(255,255,255,.4) 0%,
-rgba(255,255,255,.1) 40%,
-rgba(255,255,255,0) 70%
-);
-
-
-display:inline-block;
-
-width:100%;
-
-max-width:500px;
-
-padding:40px 0;
-
-}
-
-
-
-.real img{
-
-
-max-width:400px;
-
-
-width:100%;
-
-
-height:auto;
-
-
-
-filter:
-
-drop-shadow(
-0 0 15px rgba(255,255,255,.6)
-);
-
+line-height:1.2;
 
 }
 
@@ -320,6 +280,7 @@ padding:100px 25px;
 
 
 
+
 h3{
 
 font-size:42px;
@@ -358,6 +319,7 @@ box-shadow:
 
 
 
+
 /* =====================
 Record
 ===================== */
@@ -372,7 +334,6 @@ flex-direction:column;
 gap:30px;
 
 }
-
 
 
 
@@ -403,6 +364,7 @@ font-size:55px;
 color:#ff3030;
 
 }
+
 
 
 
@@ -445,9 +407,11 @@ font-weight:bold;
 
 
 
+
 /* =====================
 Gallery Slider
 ===================== */
+
 
 
 .slider{
@@ -470,6 +434,8 @@ overflow:hidden;
 
 
 
+
+
 .slides{
 
 width:100%;
@@ -485,6 +451,7 @@ justify-content:center;
 position:relative;
 
 }
+
 
 
 
@@ -513,7 +480,6 @@ box-shadow:
 
 0 0 40px rgba(255,0,0,.25);
 
-
 }
 
 
@@ -530,6 +496,8 @@ z-index:3;
 
 
 
+
+
 .slide.prev,
 .slide.next{
 
@@ -540,8 +508,10 @@ transform:scale(.75);
 
 z-index:2;
 
-
 }
+
+
+
 
 
 
@@ -569,7 +539,6 @@ font-size:40px;
 
 cursor:pointer;
 
-
 }
 
 
@@ -592,8 +561,6 @@ right:5%;
 
 
 
-
-
 .dots{
 
 text-align:center;
@@ -601,6 +568,7 @@ text-align:center;
 margin-top:20px;
 
 }
+
 
 
 
@@ -622,6 +590,7 @@ margin:8px;
 
 
 
+
 .dot.active{
 
 background:red;
@@ -634,9 +603,11 @@ background:red;
 
 
 
+
 /* =====================
 SNS
 ===================== */
+
 
 
 .sns{
@@ -673,6 +644,7 @@ text-align:center;
 color:#777;
 
 }
+
 
 
 
@@ -724,7 +696,6 @@ Mobile
 padding:0 20px;
 
 }
-
 
 
 
@@ -788,6 +759,7 @@ right:0;
 
 
 
+
 .menu a{
 
 margin:15px 0;
@@ -834,18 +806,12 @@ font-size:22px;
 
 
 
-.real{
 
-padding:25px 0;
+.hero h1{
 
-}
+font-size:65px;
 
-
-
-
-.real img{
-
-max-width:280px;
+letter-spacing:12px;
 
 }
 
@@ -862,6 +828,7 @@ font-size:28px;
 
 
 
+
 .info{
 
 font-size:14px;
@@ -869,6 +836,7 @@ font-size:14px;
 letter-spacing:4px;
 
 }
+
 
 
 
@@ -904,11 +872,13 @@ padding:25px;
 
 
 
+
 .fight h1{
 
 font-size:48px;
 
 }
+
 
 
 
@@ -922,13 +892,11 @@ height:350px;
 
 
 
-
 .slide{
 
 width:85%;
 
 }
-
 
 
 

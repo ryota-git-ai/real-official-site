@@ -38,6 +38,7 @@ slide.classList.add("active");
 
 }
 
+
 else if(
 i === (index - 1 + slides.length)
 % slides.length
@@ -48,6 +49,7 @@ slide.classList.add("prev");
 
 
 }
+
 
 else if(
 i === (index + 1)
@@ -84,7 +86,6 @@ dot.classList.add("active");
 
 
 });
-
 
 
 }
@@ -133,6 +134,7 @@ showSlide(current);
 
 
 
+
 const nextButton =
 document.querySelector(".next");
 
@@ -140,6 +142,7 @@ document.querySelector(".next");
 
 const prevButton =
 document.querySelector(".prev");
+
 
 
 
@@ -154,7 +157,6 @@ nextSlide
 
 
 }
-
 
 
 
@@ -219,6 +221,7 @@ document.getElementById("menu");
 
 
 
+
 if(hamburger && menu){
 
 
@@ -241,6 +244,7 @@ hamburger.classList.toggle("open");
 
 
 }
+
 
 
 
