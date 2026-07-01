@@ -8,9 +8,11 @@ box-sizing:border-box;
 }
 
 
+
 html{
 scroll-behavior:smooth;
 }
+
 
 
 body{
@@ -24,6 +26,7 @@ font-family:"Helvetica Neue",Arial,sans-serif;
 line-height:1.8;
 
 }
+
 
 
 
@@ -75,18 +78,13 @@ padding:10px 20px 10px 1px;
 
 
 
+
+
 .logo img{
 
-
-height:clamp(
-28px,
-3vw,
-40px
-);
-
+height:clamp(28px,3vw,40px);
 
 width:auto;
-
 
 }
 
@@ -101,8 +99,6 @@ display:flex;
 align-items:center;
 
 }
-
-
 
 
 
@@ -151,9 +147,9 @@ background:white;
 
 margin:6px;
 
-transition:.3s;
-
 }
+
+
 
 
 
@@ -181,9 +177,11 @@ rgba(0,0,0,.9)
 url("images/hero.jpg");
 
 
+
 background-size:cover;
 
 background-position:center;
+
 
 
 display:flex;
@@ -197,7 +195,6 @@ align-items:center;
 
 
 
-
 .overlay{
 
 text-align:center;
@@ -205,7 +202,6 @@ text-align:center;
 animation:fade 1.5s;
 
 }
-
 
 
 
@@ -223,6 +219,7 @@ margin-bottom:30px;
 
 
 
+
 .hero h2{
 
 font-size:40px;
@@ -234,6 +231,7 @@ margin-top:20px;
 
 
 
+
 .info{
 
 margin-top:25px;
@@ -241,6 +239,8 @@ margin-top:25px;
 letter-spacing:7px;
 
 }
+
+
 
 
 
@@ -272,7 +272,9 @@ font-size:42px;
 
 margin-bottom:35px;
 
+
 border-left:5px solid #e00000;
+
 
 padding-left:15px;
 
@@ -283,17 +285,203 @@ padding-left:15px;
 
 
 .card,
-.fight{
+.fight,
+.news-card{
+
 
 background:#111;
 
+
 padding:35px;
 
+
 border-radius:25px;
+
 
 box-shadow:
 
 0 20px 50px rgba(0,0,0,.5);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================
+NEWS
+===================== */
+
+
+.news-list{
+
+
+display:flex;
+
+
+flex-direction:column;
+
+
+gap:25px;
+
+
+}
+
+
+
+
+.news-card{
+
+
+position:relative;
+
+
+overflow:hidden;
+
+
+}
+
+
+
+
+.news-card h4{
+
+
+font-size:24px;
+
+margin:15px 0;
+
+}
+
+
+
+
+
+.date{
+
+
+font-size:14px;
+
+color:#aaa;
+
+
+}
+
+
+
+
+
+.badge{
+
+
+position:absolute;
+
+
+top:20px;
+
+
+right:20px;
+
+
+padding:5px 15px;
+
+
+border-radius:30px;
+
+
+font-size:12px;
+
+
+font-weight:bold;
+
+
+}
+
+
+
+
+
+.badge.new{
+
+background:#e00000;
+
+}
+
+
+
+.badge.result{
+
+background:#333;
+
+}
+
+
+
+
+
+.news-card h2{
+
+
+font-size:45px;
+
+
+color:#ff3030;
+
+
+}
+
+
+
+
+
+
+
+.download{
+
+
+display:inline-block;
+
+
+margin-top:25px;
+
+
+padding:14px 25px;
+
+
+background:#e00000;
+
+
+color:white;
+
+
+text-decoration:none;
+
+
+border-radius:30px;
+
+
+font-weight:bold;
+
+
+transition:.3s;
+
+
+}
+
+
+
+
+
+.download:hover{
+
+
+opacity:.8;
+
 
 }
 
@@ -323,11 +511,14 @@ gap:30px;
 
 
 
+
 .fight{
 
 text-align:center;
 
 }
+
+
 
 
 
@@ -338,6 +529,7 @@ letter-spacing:5px;
 color:#aaa;
 
 }
+
 
 
 
@@ -368,23 +560,33 @@ letter-spacing:8px;
 
 .youtube{
 
+
 display:inline-block;
+
 
 margin-top:25px;
 
+
 padding:15px 30px;
+
 
 background:#ff0000;
 
+
 color:white;
+
 
 text-decoration:none;
 
+
 border-radius:40px;
+
 
 font-weight:bold;
 
+
 }
+
 
 
 
@@ -398,22 +600,26 @@ Gallery Slider
 ===================== */
 
 
-
 .slider{
+
 
 position:relative;
 
-width:100%;
 
 height:520px;
 
+
 display:flex;
+
 
 align-items:center;
 
+
 justify-content:center;
 
+
 overflow:hidden;
+
 
 }
 
@@ -423,17 +629,24 @@ overflow:hidden;
 
 .slides{
 
+
 width:100%;
+
 
 height:100%;
 
+
 display:flex;
+
 
 align-items:center;
 
+
 justify-content:center;
 
+
 position:relative;
+
 
 }
 
@@ -443,13 +656,18 @@ position:relative;
 
 .slide{
 
+
 position:absolute;
+
 
 width:60%;
 
+
 max-width:700px;
 
+
 border-radius:25px;
+
 
 
 opacity:0;
@@ -458,24 +676,32 @@ opacity:0;
 transform:scale(.7);
 
 
-transition:.5s ease;
+
+transition:.5s;
 
 
 box-shadow:
 
 0 0 40px rgba(255,0,0,.25);
 
+
 }
+
+
 
 
 
 .slide.active{
 
+
 opacity:1;
+
 
 transform:scale(1);
 
+
 z-index:3;
+
 
 }
 
@@ -489,13 +715,14 @@ z-index:3;
 
 opacity:.35;
 
+
 transform:scale(.75);
+
 
 z-index:2;
 
+
 }
-
-
 
 
 
@@ -504,27 +731,40 @@ z-index:2;
 .prev,
 .next{
 
+
 position:absolute;
+
 
 z-index:5;
 
+
 width:60px;
+
 
 height:60px;
 
+
 border-radius:50%;
+
 
 border:none;
 
+
 background:#111;
+
 
 color:white;
 
+
 font-size:40px;
+
 
 cursor:pointer;
 
+
 }
+
+
 
 
 
@@ -533,6 +773,8 @@ cursor:pointer;
 left:5%;
 
 }
+
+
 
 
 
@@ -548,6 +790,7 @@ right:5%;
 
 .dots{
 
+
 text-align:center;
 
 margin-top:20px;
@@ -559,19 +802,27 @@ margin-top:20px;
 
 .dot{
 
+
 display:inline-block;
+
 
 width:10px;
 
+
 height:10px;
+
 
 background:#555;
 
+
 border-radius:50%;
+
 
 margin:8px;
 
+
 }
+
 
 
 
@@ -589,29 +840,54 @@ background:red;
 
 
 
+
 /* =====================
-SNS
+SNS CONTACT
 ===================== */
 
 
 
 .sns{
 
+
 display:block;
+
 
 background:#111;
 
+
 padding:25px;
+
 
 border-radius:20px;
 
+
 color:white;
+
 
 text-decoration:none;
 
+
 text-align:center;
 
+
 }
+
+
+
+
+
+#contact h4{
+
+
+font-size:26px;
+
+
+margin-bottom:15px;
+
+
+}
+
 
 
 
@@ -622,13 +898,18 @@ text-align:center;
 
 footer{
 
+
 padding:60px 20px;
+
 
 text-align:center;
 
+
 color:#777;
 
+
 }
+
 
 
 
@@ -649,7 +930,6 @@ transform:translateY(40px);
 }
 
 
-
 to{
 
 opacity:1;
@@ -658,6 +938,8 @@ opacity:1;
 
 
 }
+
+
 
 
 
@@ -696,8 +978,8 @@ display:block;
 
 
 
-
 .menu{
+
 
 position:fixed;
 
@@ -737,6 +1019,7 @@ transition:.3s;
 
 .menu.active{
 
+
 right:0;
 
 }
@@ -747,13 +1030,14 @@ right:0;
 
 .menu a{
 
+
 margin:15px 0;
+
 
 font-size:18px;
 
+
 }
-
-
 
 
 
@@ -771,13 +1055,12 @@ height:28px;
 
 
 
-
-
 .hero{
 
 height:90vh;
 
 }
+
 
 
 
@@ -790,9 +1073,13 @@ font-size:22px;
 
 
 
+
+
 .hero h2{
 
+
 font-size:28px;
+
 
 }
 
@@ -802,12 +1089,14 @@ font-size:28px;
 
 .info{
 
+
 font-size:14px;
+
 
 letter-spacing:4px;
 
-}
 
+}
 
 
 
@@ -825,7 +1114,9 @@ padding:80px 18px;
 
 h3{
 
+
 font-size:32px;
+
 
 }
 
@@ -834,9 +1125,12 @@ font-size:32px;
 
 
 .card,
-.fight{
+.fight,
+.news-card{
+
 
 padding:25px;
+
 
 }
 
@@ -846,7 +1140,9 @@ padding:25px;
 
 .fight h1{
 
+
 font-size:48px;
+
 
 }
 
@@ -856,16 +1152,21 @@ font-size:48px;
 
 .slider{
 
+
 height:350px;
+
 
 }
 
 
 
 
+
 .slide{
 
+
 width:85%;
+
 
 }
 
@@ -879,35 +1180,15 @@ width:85%;
 
 width:45px;
 
+
 height:45px;
+
 
 font-size:30px;
 
-}
-
-
-
-
-
-}
-
-/* =====================
-Contact
-===================== */
-
-
-#contact .card h4{
-
-font-size:26px;
-
-margin-bottom:15px;
 
 }
 
 
-
-#contact p{
-
-font-size:16px;
 
 }
