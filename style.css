@@ -955,7 +955,19 @@ Mobile
 
 
 @media(max-width:700px){
+.sponsor-single{
 
+margin-top:25px;
+
+}
+
+
+
+.sponsor-single img{
+
+max-width:95%;
+
+}
 
 
 .nav{
@@ -1196,34 +1208,23 @@ font-size:30px;
    SPONSORS
 ===================================== */
 
-.sponsor-grid{
+.sponsor-single{
 
-display:grid;
+display:flex;
 
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+justify-content:center;
 
-gap:30px;
+align-items:center;
 
-/* ★ PCでカード幅を少し抑えて高級感を出す */
-max-width:900px;
-
-margin:0 auto;
+margin-top:40px;
 
 }
 
 
 
-.sponsor-card{
+.sponsor-single a{
 
-background:#111;
-
-border-radius:20px;
-
-padding:25px;
-
-text-align:center;
-
-box-shadow:0 20px 50px rgba(0,0,0,.5);
+display:block;
 
 transition:.3s;
 
@@ -1231,109 +1232,24 @@ transition:.3s;
 
 
 
-.sponsor-card:hover{
+.sponsor-single a:hover{
 
-transform:translateY(-6px);
-
-box-shadow:0 25px 60px rgba(255,0,0,.18);
+transform:scale(1.03);
 
 }
 
 
 
-/* ---------- ロゴ ---------- */
-.sponsor-logo{
-
-background:#1a1a1a;
-
-border:1px solid #2b2b2b;
-
-border-radius:15px;
-
-height:180px;
-
-padding:15px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-margin:0 auto;
-
-max-width:420px;
-
-}
-
-
-
-.sponsor-logo img{
+.sponsor-single img{
 
 display:block;
 
-margin:auto;
+width:100%;
 
-width:auto;
-
-max-width:380px;
-
-max-height:150px;
+max-width:650px;
 
 height:auto;
 
 object-fit:contain;
-
-transition:.3s;
-
-}
-
-.sponsor-card h4{
-
-font-size:20px;
-
-margin-bottom:8px;
-
-}
-
-
-
-/* =====================================
-   Mobile
-===================================== */
-
-@media(max-width:700px){
-
-.sponsor-grid{
-
-grid-template-columns:1fr;
-
-gap:20px;
-
-max-width:100%;
-
-}
-
-
-
-.sponsor-logo{
-
-height:150px;
-
-max-width:100%;
-
-padding:15px;
-
-}
-
-
-
-.sponsor-logo img{
-
-max-width:100%;
-
-max-height:120px;
-
-}
 
 }
