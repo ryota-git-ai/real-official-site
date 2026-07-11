@@ -1242,10 +1242,11 @@ box-shadow:0 25px 60px rgba(255,0,0,.18);
 
 
 /* ---------- ロゴ ---------- */
-
 .sponsor-logo{
 
-background:#fff;
+background:#1a1a1a;
+
+border:1px solid #2b2b2b;
 
 border-radius:15px;
 
@@ -1261,7 +1262,6 @@ justify-content:center;
 
 margin:0 auto 20px;
 
-/* ★ PCではロゴエリアを小さく */
 max-width:280px;
 
 }
