@@ -1250,9 +1250,9 @@ border:1px solid #2b2b2b;
 
 border-radius:15px;
 
-height:150px;
+height:180px;
 
-padding:20px;
+padding:15px;
 
 display:flex;
 
@@ -1262,7 +1262,7 @@ justify-content:center;
 
 margin:0 auto;
 
-max-width:340px;
+max-width:420px;
 
 }
 
@@ -1276,9 +1276,9 @@ margin:auto;
 
 width:auto;
 
-max-width:300px;
+max-width:380px;
 
-max-height:120px;
+max-height:150px;
 
 height:auto;
 
@@ -1287,8 +1287,6 @@ object-fit:contain;
 transition:.3s;
 
 }
-
-
 
 .sponsor-card h4{
 
@@ -1320,9 +1318,11 @@ max-width:100%;
 
 .sponsor-logo{
 
-height:100px;
+height:150px;
 
 max-width:100%;
+
+padding:15px;
 
 }
 
@@ -1332,7 +1332,7 @@ max-width:100%;
 
 max-width:100%;
 
-max-height:70px;
+max-height:120px;
 
 }
 
