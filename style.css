@@ -1250,9 +1250,9 @@ border:1px solid #2b2b2b;
 
 border-radius:15px;
 
-height:120px;
+height:150px;
 
-padding:18px;
+padding:20px;
 
 display:flex;
 
@@ -1260,9 +1260,9 @@ align-items:center;
 
 justify-content:center;
 
-margin:0 auto 20px;
+margin:0 auto;
 
-max-width:280px;
+max-width:340px;
 
 }
 
@@ -1276,14 +1276,15 @@ margin:auto;
 
 width:auto;
 
-/* ★ PCだけ小さく表示 */
-max-width:220px;
+max-width:300px;
 
-max-height:80px;
+max-height:120px;
 
 height:auto;
 
 object-fit:contain;
+
+transition:.3s;
 
 }
 
