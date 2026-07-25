@@ -833,14 +833,6 @@ background:red;
 
 }
 
-
-
-
-
-
-
-
-
 /* =====================
 SNS CONTACT
 ===================== */
@@ -915,6 +907,64 @@ color:#777;
 
 
 
+/* =====================
+SPONSORS
+===================== */
+
+.sponsor-main{
+display:flex;
+justify-content:center;
+margin:45px 0;
+}
+
+.sponsor-main img{
+display:block;
+max-width:90%;
+max-height:300px;
+width:auto;
+height:auto;
+object-fit:contain;
+}
+
+.sponsor-sub{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:35px 50px;
+
+margin-top:40px;
+
+justify-items:center;
+
+align-items:center;
+
+}
+
+
+.sponsor-sub a{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+
+.sponsor-sub img{
+
+width:100%;
+
+max-width:240px;
+
+max-height:110px;
+
+height:auto;
+
+object-fit:contain;
+
+transition:.3s;
+
+}
 
 
 
@@ -955,20 +1005,24 @@ Mobile
 
 
 @media(max-width:700px){
-.sponsor-single{
-
-margin-top:25px;
-
+.sponsor-main{
+height:180px;
 }
 
-
-
-.sponsor-single img{
-
+.sponsor-main img{
 max-width:95%;
-
+max-height:170px;
 }
 
+.sponsor-sub{
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+}
+
+.sponsor-sub img{
+max-width:90px;
+height:55px;
+}
 
 .nav{
 
@@ -1198,58 +1252,5 @@ height:45px;
 
 font-size:30px;
 
-
-}
-
-
-
-}
-/* =====================================
-   SPONSORS
-===================================== */
-
-.sponsor-single{
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-margin-top:40px;
-
-}
-
-
-
-.sponsor-single a{
-
-display:block;
-
-transition:.3s;
-
-}
-
-
-
-.sponsor-single a:hover{
-
-transform:scale(1.03);
-
-}
-
-
-
-.sponsor-single img{
-
-display:block;
-
-width:100%;
-
-max-width:650px;
-
-height:auto;
-
-object-fit:contain;
 
 }
